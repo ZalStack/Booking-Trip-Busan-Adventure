@@ -1,3 +1,8 @@
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
+
+"use client"
+
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import AdminLayout from "@/components/admin/AdminLayout";
@@ -8,7 +13,6 @@ import TestimonialsTab from "@/components/admin/TestimonialsTab";
 import ContactsTab from "@/components/admin/ContactsTab";
 import GalleryTab from "@/components/admin/GalleryTab";
 import SettingsTab from "@/components/admin/SettingsTab";
-export const dynamic = "force-dynamic";
 
 export default function AdminPage() {
   const [trips, setTrips] = useState([]);

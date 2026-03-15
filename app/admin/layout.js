@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import { verifyAdmin } from '@/lib/auth'
 import { redirect } from 'next/navigation'
 

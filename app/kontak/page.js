@@ -91,7 +91,7 @@ export default function KontakPage() {
                     <FiMail className="text-2xl text-primary flex-shrink-0" />
                     <div>
                       <h3 className="font-semibold">Email</h3>
-                      <p className="text-gray-600">info@busanadventure.com</p>
+                      <p className="text-gray-600">busanadventurenusantara@gmail.com</p>
                     </div>
                   </div>
 
@@ -99,7 +99,7 @@ export default function KontakPage() {
                     <FiInstagram className="text-2xl text-primary flex-shrink-0" />
                     <div>
                       <h3 className="font-semibold">Instagram</h3>
-                      <p className="text-gray-600">@busanadventure</p>
+                      <p className="text-gray-600">@busanadventureindonesia</p>
                     </div>
                   </div>
                 </div>

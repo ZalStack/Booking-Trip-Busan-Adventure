@@ -1,34 +1,6 @@
 import { FiShield, FiUsers, FiAward, FiHeart } from 'react-icons/fi'
 
 export default function TentangPage() {
-  const guides = [
-    {
-      name: 'Ahmad Rizki',
-      role: 'Lead Guide',
-      experience: '10+ tahun',
-      image: 'https://images.unsplash.com/photo-1566492031773-4fbd0e5331a7'
-    },
-    {
-      name: 'Budi Santoso',
-      role: 'Senior Guide',
-      experience: '8 tahun',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d'
-    },
-    {
-      name: 'Citra Dewi',
-      role: 'Guide',
-      experience: '5 tahun',
-      image: 'https://images.unsplash.com/photo-1494790108777-3f1db9f6a6e6'
-    }
-  ]
-
-  const certifications = [
-    'Sertifikasi Guide Gunung (WANAGIRI)',
-    'Sertifikat Pertolongan Pertama (PMI)',
-    'Lisensi Pemandu Wisata Alam',
-    'Sertifikasi Survival Training'
-  ]
-
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -51,19 +23,19 @@ export default function TentangPage() {
               <span className="text-primary">Sejarah</span>{' '}
               <span className="text-secondary">Kami</span>
             </h2>
-            <div className="card">
+            <div className="card text-justify">
               <p className="text-gray-600 mb-4">
-                Busan Adventure Nusantara didirikan pada tahun 2015 oleh sekelompok pecinta alam 
+                Busan Adventure Nusantara didirikan pada tahun 2010 oleh sekelompok pecinta alam 
                 yang memiliki visi untuk memperkenalkan keindahan gunung-gunung di Indonesia 
                 kepada masyarakat luas.
               </p>
               <p className="text-gray-600 mb-4">
                 Berawal dari komunitas kecil pendaki, kami berkembang menjadi penyedia jasa 
-                open trip pendakian profesional yang telah melayani ribuan peserta dari 
+                open trip pendakian profesional yang telah melayani ratusan peserta dari 
                 berbagai daerah.
               </p>
               <p className="text-gray-600">
-                Hingga saat ini, kami telah berhasil membawa lebih dari 5000 peserta 
+                Hingga saat ini, kami telah berhasil membawa peserta trip 
                 menikmati keindahan puncak-puncak gunung di Nusantara dengan aman dan nyaman.
               </p>
             </div>
@@ -90,56 +62,6 @@ export default function TentangPage() {
                 <li>✓ Membangun komunitas pecinta alam yang bertanggung jawab</li>
                 <li>✓ Memberikan pengalaman petualangan yang tak terlupakan</li>
               </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Tim Guide */}
-      <section className="py-16">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-4">
-            <span className="text-primary">Tim</span>{' '}
-            <span className="text-secondary">Guide Profesional</span>
-          </h2>
-          <p className="text-center text-gray-600 mb-12">
-            Didampingi guide berpengalaman dan bersertifikasi
-          </p>
-
-          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            {guides.map((guide, index) => (
-              <div key={index} className="card text-center">
-                <div className="w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden">
-                  <img
-                    src={guide.image}
-                    alt={guide.name}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <h3 className="text-xl font-bold mb-1">{guide.name}</h3>
-                <p className="text-primary font-medium mb-2">{guide.role}</p>
-                <p className="text-gray-500">Pengalaman {guide.experience}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Sertifikasi */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-8">
-              <span className="text-primary">Sertifikasi</span>{' '}
-              <span className="text-secondary">& Lisensi</span>
-            </h2>
-            <div className="grid md:grid-cols-2 gap-4">
-              {certifications.map((cert, index) => (
-                <div key={index} className="card flex items-center space-x-3">
-                  <FiAward className="text-3xl text-primary" />
-                  <span className="text-gray-700">{cert}</span>
-                </div>
-              ))}
             </div>
           </div>
         </div>

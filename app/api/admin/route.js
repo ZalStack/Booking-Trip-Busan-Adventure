@@ -4,6 +4,7 @@ import bcrypt from 'bcryptjs'
 import { verifyAdmin, getAdminInfo } from '@/lib/auth'
 import jwt from 'jsonwebtoken'
 import { cookies } from 'next/headers'
+export const runtime = "nodejs";
 
 // GET: Ambil data admin
 export async function GET() {

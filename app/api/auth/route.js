@@ -4,6 +4,7 @@ import { cookies } from 'next/headers'
 import { query } from '@/lib/db'
 import bcrypt from 'bcryptjs'
 import jwt from 'jsonwebtoken'
+export const runtime = "nodejs";
 
 export async function POST(request) {
   try {

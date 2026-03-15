@@ -1,6 +1,7 @@
 import { query } from '@/lib/db'
 import { verifyAdmin } from '@/lib/auth'
 import { NextResponse } from 'next/server'
+export const runtime = "nodejs";
 
 export async function GET(request) {
   try {

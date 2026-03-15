@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { writeFile, mkdir } from "fs/promises";
 import path from "path";
 import { verifyAdmin } from "@/lib/auth";
+export const runtime = "nodejs";
 
 export async function POST(request) {
   try {
